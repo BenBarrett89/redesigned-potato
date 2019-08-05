@@ -1,0 +1,30 @@
+{
+  "name": "redesigned-potato",
+  "version": "0.0.1",
+  "description": "Test of a Node.js script to generate a PDF from a CSV",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenBarrett89/redesigned-potato.git"
+  },
+  "author": "Ben Barrett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenBarrett89/redesigned-potato/issues"
+  },
+  "homepage": "https://github.com/BenBarrett89/redesigned-potato#readme",
+  "dependencies": {
+    "csv-parse": "^4.4.3",
+    "fs-extra": "^8.1.0",
+    "handlebars": "^4.1.2",
+    "prompt": "^1.0.0",
+    "puppeteer": "^1.19.0"
+  }
+}
