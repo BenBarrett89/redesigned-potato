@@ -5,6 +5,24 @@
     }
   </style>
   <body>
-    <h1>Hello World!</h1>
+    <h1>{{report}}</h1>
+    <div>
+      <h2>Breakdown</h2>
+      {{#each locations}}
+      <div>
+        <h3>{{location}}</h3>
+        <table>
+          {{#each records}}
+            <tr>
+              <td>{{name}}</td>
+              <td>{{reference}}</td>
+              <td>{{date}}</td>
+            </tr>
+          {{/each}}
+        </table>
+        <div>{{count}} cases @ {{rate}} = {{cost}}</div>
+      </div>
+      {{/each}}
+    </div>
   </body>
 </html>
