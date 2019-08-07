@@ -62,3 +62,6 @@ typings/
 
 # Don't commit PDFs generated during testing
 *.pdf
+
+# Don't commit Mac files
+.DS_Store
