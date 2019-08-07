@@ -28,3 +28,12 @@ npm install
 ```terminal
 npm start
 ```
+
+You will be prompted for the filename of the CSV file (`sample`) and then asked
+for the title of the report (which will be used as the output filename too):
+
+```terminal
+prompt: filename:  sample
+prompt: report:  test
+File outputted: test.pdf
+```
