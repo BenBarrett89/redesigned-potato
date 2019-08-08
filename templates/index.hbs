@@ -1,12 +1,80 @@
 <html>
   <style>
+    .heading {
+      text-align: right;
+    }
+
+    div.location {
+      align: center;
+    }
+
+    div.location table {
+      border: none;
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    div.location tr:nth-child(even){
+      background-color: #f2f2f2;
+    }
+
+    div.location td {
+      padding: 0.1cm;
+    }
+
+    div.location td.name {
+      width: 8cm;
+    }
+
+    div.location td.reference {
+      text-align: center;
+      width: 4cm;
+    }
+
+    div.location td.date {
+      text-align: center;
+      width: 6cm;
+    }
+
+    div.total {
+      align: center;
+    }
+
+    div.total table {
+      border: none;
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    div.total td {
+      padding: 0.2cm;
+      width: 5cm;
+    }
+
+    div.total tr:nth-child(even){
+      background-color: #f2f2f2;
+    }
+
+    td.cost {
+      text-align: right;
+    }
+
     h1 {
-      font-family: Tahoma, sans-serif
+      
+    }
+    
+    h2 {
+
+    }
+
+    body {
+      font-family: Tahoma, sans-serif;
+      margin: 2cm 1cm 1cm 1cm
     }
   </style>
   <body>
     <div class="heading">
-      <p>Date: {{date}}</p>
+      <p class="date">{{date}}</p>
     </div>
     <div class="report">
       <h1>{{report}}</h1>
@@ -18,9 +86,9 @@
           <table>
             {{#each records}}
               <tr>
-                <td>{{name}}</td>
-                <td>{{reference}}</td>
-                <td>{{date.text}}</td>
+                <td class="name">{{name}}</td>
+                <td class="reference">{{reference}}</td>
+                <td class="date">{{date.text}}</td>
               </tr>
             {{/each}}
           </table>
@@ -30,17 +98,18 @@
         </div>
         {{/each}}
       </div>
+      <hr/>
       <div class="total">
         <table>
           {{#each locations}}
             <tr>
-              <td>{{name}}:</td>
-              <td>£{{cost}}</td>
+              <td>{{name}} Sub-Total:</td>
+              <td class="cost">£{{cost}}</td>
             </tr>
           {{/each}}
             <tr>
               <td>Total:</td>
-              <td>£{{total}}</td>
+              <td class="cost">£{{total}}</td>
             </tr>
         </table>
       </div>
