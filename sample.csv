@@ -1,5 +1,10 @@
 Name,Reference Number,Date,Location
-Testy McTestface,0001,7th July 2019,BPV
-Jeff Goldblum,0002,29th July 2019,TVP
-Someone Else,0003,28th July 2019,TVP
-Blahdy McBlahblah,0004,99th July 2019,BPV
+Jeff Goldblum,0002,29 July 2019,TVP
+Testy McTestface,0001,17 July 2019,BPV
+Someone Else,0003,28 July 2019,TVP
+Blahdy McBlahblah,0004,09 July 2019,BPV
+Invalid Datedude,0005,99 July 2019,BPV
+Same Date Second,0006,04 July 2019,TVP
+Same Date First,0007,04 July 2019,TVP
+Same Date X,0008,4 July 2019,TVP
+Same Date V,0009,4 July 2019,TVP

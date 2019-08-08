@@ -5,24 +5,45 @@
     }
   </style>
   <body>
-    <h1>{{report}}</h1>
-    <div>
-      <h2>Breakdown</h2>
-      {{#each locations}}
-      <div>
-        <h3>{{location}}</h3>
+    <div class="heading">
+      <p>Date: {{date}}</p>
+    </div>
+    <div class="report">
+      <h1>{{report}}</h1>
+      <div class="breakdown">
+        <h2>Breakdown</h2>
+        {{#each locations}}
+        <div class="location">
+          <h3>{{name}}</h3>
+          <table>
+            {{#each records}}
+              <tr>
+                <td>{{name}}</td>
+                <td>{{reference}}</td>
+                <td>{{date.text}}</td>
+              </tr>
+            {{/each}}
+          </table>
+          <div class="summary">
+            <p>{{count}} cases @ £{{rate}} = £{{cost}}</p>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      <div class="total">
         <table>
-          {{#each records}}
+          {{#each locations}}
             <tr>
-              <td>{{name}}</td>
-              <td>{{reference}}</td>
-              <td>{{date}}</td>
+              <td>{{name}}:</td>
+              <td>£{{cost}}</td>
             </tr>
           {{/each}}
+            <tr>
+              <td>Total:</td>
+              <td>£{{total}}</td>
+            </tr>
         </table>
-        <div>{{count}} cases @ {{rate}} = {{cost}}</div>
       </div>
-      {{/each}}
     </div>
   </body>
 </html>
