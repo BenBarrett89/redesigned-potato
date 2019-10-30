@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/BenBarrett89/redesigned-potato#readme",
   "dependencies": {
-    "csv-parse": "^4.4.3",
+    "csv-parse": "^4.4.6",
     "fs-extra": "^8.1.0",
     "handlebars": "^4.1.2",
     "moment": "^2.24.0",
